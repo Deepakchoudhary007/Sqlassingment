@@ -1,0 +1,5 @@
+SELECT min(infant_mortality)
+ FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` 
+ 
+SELECT avg(infant_mortality)as avg_infant_mortality_rate
+ FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`

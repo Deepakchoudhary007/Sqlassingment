@@ -1,0 +1,4 @@
+select distinct  country_name,life_expectancy
+ FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` 
+ where life_expectancy<55 and year=2010
+order by 2 desc 

@@ -1,0 +1,3 @@
+SELECT country_name,country_area 
+ FROM `bigquery-public-data.census_bureau_international.country_names_area` 
+ order by 2 desc

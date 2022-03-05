@@ -1,0 +1,3 @@
+SELECT country_name,(net_migration)
+ FROM `bigquery-public-data.census_bureau_international.birth_death_growth_rates` 
+ order by 2 desc  

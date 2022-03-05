@@ -1,0 +1,9 @@
+SELECT age.country_name,age.life_expectancy,size.country_area
+FROM (SELECT country_name,life_expectancy
+FROM`bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE year = 2016) age
+INNER JOIN (SELECT country_name,country_area
+FROM`bigquery-public-data.census_bureau_international.country_names_area`
+where country_area > 25000) size
+ON age.country_name = size.country_name
+ORDER BY 2 DESC

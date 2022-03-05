@@ -1,0 +1,5 @@
+SELECT country_name,growth_rate,year
+FROM `bigquery-public-data.census_bureau_international.birth_death_growth_rates`
+where growth_rate<5 and year=2000
+order by 2 asc  
+limit 10
